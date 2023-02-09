@@ -1,0 +1,33 @@
+
+#pet-nav {
+    font-size: 35px;
+}
+
+#store-label{
+    font-size: 35px;
+}
+#brands {
+    text-align: center;
+    color: rgb(75, 93, 139);
+}
+
+.charity-heading{
+    position: relative;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.charity-text {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    color:  rgb(0, 247, 255);
+}
+
+.charity-description {
+    position: absolute;
+    top:38%;
+    left: 30%;
+    color: rgb(12, 168, 203);
+}

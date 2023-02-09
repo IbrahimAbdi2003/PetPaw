@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetPaw</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid align-content-center" id="pet-nav">
+        <a class="navbar-brand" href="#" id="store-label">Pet Paw</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gift Cards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <button type="button" class="btn btn-outline-danger">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50"
+              height="50"
+              fill="currentColor"
+              class="button"
+              class="bi bi-cart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <!-- Main Hub-->
+    <div class="charity-heading">
+      <img src="./photos/pup_run_grass.png" alt="" style="width: 100%; height: 550px; overflow: hidden;">
+      <h1 class="charity-text ">Pet Paw Saint Mary Charity</h1>
+      <br>
+      <p class="charity-description"><span style="margin-left: -104px;">We are happy to celebrate the 2nd anniversary of Saint Mary Charity.</span><br> With every purchase you make we will donate a dollar to any charity of your choice.</p>
+    </div>
+    <div class="container pt-4 p-md-5 mb-4 rounded text-bg-light d-flex flex-wrap justify-content-center py-3 mb-4 offset-md-3 px-0 row">
+      <div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./photos/who_orange_cat.png" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="Orange cat lookig curious">
+            <h3>Cats</h3>
+          </div>
+          <div class="col-md-4">
+            <img src="./photos/happy_boi.webp" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="A very happy Pitbull">
+            <h3>Dogs</h3>
+            </div>
+          <div class="col-md-4">
+            <img src="./photos/fly_high.webp" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="A bird flying across">
+            <h3>Birds</h3>
+          </div>
+          <div class="col-md-4"> 
+            <img src="./photos/rep_reptiles.jpg" class="rounded-circle border border-primary" style="height: 150px; width: 160px;" alt="A chameleon chilling on a branch">
+            <h3>Reptiles</h3>
+          </div>
+          <div class="col-md-4">
+            <img src="./photos/yo_fish.webp" class="rounded-circle border border-primary" style="height: 150px; width: 160px" alt="A goldfish with thier mouth open">
+            <h3>Fish</h3>
+          </div>
+          <div class="col-md-4">
+            <img src="./photos/get_to_go_fast.webp" class="rounded-circle border border-primary" style="height: 150px; width: 160px" alt="A relx heghog">
+            <h3>Small Pets</h3>
+          </div>
+        </div>
+        <br>
+        <div class="justify-content-center">
+          <h4 id="brands">Trusted Brands</h4>
+          <br>
+          <div class="row">
+            <div class="col-md-4">
+              <img src="./photos/prit_food.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Pritum Dog Food Co.</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="./photos/ryn_ryn.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Ryan & Connor</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="./photos/doug_brand.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Dougs Co.</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="./photos/gideon-family.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Gideon Family Co.</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="./photos/ib_co.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Ibrahim Critters Co.</h5>
+            </div>
+            <div class="col-md-4">
+              <img src="https://www.cartonionline.com/gif/CARTOON/hanna_e_barbera/scooby-doo/Scooby-doo_08.jpg" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <h5>Shaggy 1969</h5>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Hub-->
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #f1f1f1">
+      <div class="container pt-4">
+        <section class="mb-4" id="">
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i>
+          </a>
+        </section>
+      </div>
+      <div
+        class="text-center text-dark p-3"
+        style="background-color: rgba(0, 0, 0, 0.2)"
+      >
+        © 2020 Copyright:
+        <h3>Pet Paw</h3>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
