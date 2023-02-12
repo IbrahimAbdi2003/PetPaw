@@ -18,6 +18,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Babel Transpiler -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- React CDN -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -68,69 +80,182 @@
     </nav>
     <!-- Header -->
     <!-- Main Hub-->
-    <div class="charity-heading">
-      <img src="./photos/pup_run_grass.png" alt="" style="width: 100%; height: 550px; overflow: hidden;">
-      <h1 class="charity-text ">Pet Paw Saint Mary Charity</h1>
-      <br>
-      <p class="charity-description"><span style="margin-left: -104px;">We are happy to celebrate the 2nd anniversary of Saint Mary Charity.</span><br> With every purchase you make we will donate a dollar to any charity of your choice.</p>
+    <!-- Banner -->
+    <div id="myCarousel" class="carousel slide d-flex flex-wrap" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+  
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <img src="./photos/pup_run_grass.png" alt="" style="width: 100%; height: 550px; overflow: hidden;">
+              <h1>Pet Paw Charity Run</h1>
+              <p>We are happy to celebrate the 2nd anniversary of Pet Paw Charity. For April through June</span><br> every purchase you make we will donate a dollar to any charity of your choice</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+  
+          <div class="container">
+            <div class="carousel-caption">
+              <img src="./photos/sale_sale.jpg" alt="" style="width: 100%; height: 550px; overflow: hidden;">
+              <h1>Spring season i shere</h1>
+              <p>The outdoors is a great place for our furry friend.<br> Pet Paw has everything on sale for both of your adventures.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Shop Now</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
+  
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <img src="./photos/move_move.jpg" alt="" style="width: 100%; height: 550px; overflow: hidden;">
+              <h1>New Store</h1>
+              <p>Pet Paw has grown so much and so fast.<br> We are proud to officially announce our new opening in Columbus.</p>
+              <p><a class="btn btn-lg btn-primary" href="#">Location</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="container pt-4 p-md-5 mb-4 rounded text-bg-light d-flex flex-wrap justify-content-center py-3 mb-4 offset-md-3 px-0 row">
+    <!-- Banner -->
+    <!-- Sections -->
+    <div
+      class="container pt-4 p-md-5 mb-4 rounded text-bg-light d-flex flex-wrap justify-content-center py-3 mb-4 offset-md-3 px-0 row"
+    >
       <div>
         <div class="row">
           <div class="col-md-4">
-            <img src="./photos/who_orange_cat.png" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="Orange cat lookig curious">
+            <img
+              src="./photos/who_orange_cat.png"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: auto"
+              alt="Orange cat lookig curious"
+            />
             <h3>Cats</h3>
           </div>
           <div class="col-md-4">
-            <img src="./photos/happy_boi.webp" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="A very happy Pitbull">
+            <img
+              src="./photos/happy_boi.webp"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: auto"
+              alt="A very happy Pitbull"
+            />
             <h3>Dogs</h3>
-            </div>
+          </div>
           <div class="col-md-4">
-            <img src="./photos/fly_high.webp" class="rounded-circle border border-primary" style="height: 150px; width: auto;" alt="A bird flying across">
+            <img
+              src="./photos/fly_high.webp"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: auto"
+              alt="A bird flying across"
+            />
             <h3>Birds</h3>
           </div>
-          <div class="col-md-4"> 
-            <img src="./photos/rep_reptiles.jpg" class="rounded-circle border border-primary" style="height: 150px; width: 160px;" alt="A chameleon chilling on a branch">
+          <div class="col-md-4">
+            <img
+              src="./photos/rep_reptiles.jpg"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: 160px"
+              alt="A chameleon chilling on a branch"
+            />
             <h3>Reptiles</h3>
           </div>
           <div class="col-md-4">
-            <img src="./photos/yo_fish.webp" class="rounded-circle border border-primary" style="height: 150px; width: 160px" alt="A goldfish with thier mouth open">
+            <img
+              src="./photos/yo_fish.webp"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: 160px"
+              alt="A goldfish with thier mouth open"
+            />
             <h3>Fish</h3>
           </div>
           <div class="col-md-4">
-            <img src="./photos/get_to_go_fast.webp" class="rounded-circle border border-primary" style="height: 150px; width: 160px" alt="A relx heghog">
+            <img
+              src="./photos/get_to_go_fast.webp"
+              class="rounded-circle border border-primary"
+              style="height: 150px; width: 160px"
+              alt="A relx heghog"
+            />
             <h3>Small Pets</h3>
           </div>
         </div>
-        <br>
+        <br />
+        <!-- Brands -->
         <div class="justify-content-center">
           <h4 id="brands">Trusted Brands</h4>
-          <br>
+          <br />
           <div class="row">
             <div class="col-md-4">
-              <img src="./photos/prit_food.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="./photos/prit_food.png"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Pritum Dog Food Co.</h5>
             </div>
             <div class="col-md-4">
-              <img src="./photos/ryn_ryn.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="./photos/ryn_ryn.png"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Ryan & Connor</h5>
             </div>
             <div class="col-md-4">
-              <img src="./photos/doug_brand.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="./photos/doug_brand.png"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Dougs Co.</h5>
             </div>
             <div class="col-md-4">
-              <img src="./photos/gideon-family.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="./photos/gideon-family.png"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Gideon Family Co.</h5>
             </div>
             <div class="col-md-4">
-              <img src="./photos/ib_co.png" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="./photos/ib_co.png"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Ibrahim Critters Co.</h5>
             </div>
             <div class="col-md-4">
-              <img src="https://www.cartonionline.com/gif/CARTOON/hanna_e_barbera/scooby-doo/Scooby-doo_08.jpg" class="img-thumbnail" style="height: 150px; width: auto;" alt="">
+              <img
+                src="https://www.cartonionline.com/gif/CARTOON/hanna_e_barbera/scooby-doo/Scooby-doo_08.jpg"
+                class="img-thumbnail"
+                style="height: 150px; width: auto"
+                alt=""
+              />
               <h5>Shaggy 1969</h5>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -195,6 +320,8 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
       integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
       crossorigin="anonymous"
+      src="./app.js"
+      type="text/babel"
     ></script>
   </body>
 </html>

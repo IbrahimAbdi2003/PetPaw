@@ -11,23 +11,17 @@
     color: rgb(75, 93, 139);
 }
 
-.charity-heading{
+
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+    color: white;
     position: relative;
-    text-align: center;
-    margin-right: 0px;
-    margin-left: 0px;
 }
-
-.charity-text {
+.container-store{
     position: absolute;
-    top: 30%;
-    left: 30%;
-    color:  rgb(0, 247, 255);
-}
-
-.charity-description {
-    position: absolute;
-    top:38%;
-    left: 30%;
-    color: rgb(12, 168, 203);
+    bottom: 0;
+   left: 20%;
+    right: 0;
+    padding-bottom: 50px;
 }
