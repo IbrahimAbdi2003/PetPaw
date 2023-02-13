@@ -13,15 +13,29 @@
 
 
 .carousel-item {
-    height: 32rem;
+    max-height: 32rem;
     background-color: #777;
-    color: white;
-    position: relative;
+    color: aqua;
+
+    
 }
 .container-store{
     position: absolute;
     bottom: 0;
-   left: 20%;
+    left: 20%;
     right: 0;
     padding-bottom: 50px;
+}
+
+.pet-carousel {
+    object-fit: none;
+    object-position: 50% 50%;
+}
+
+#slide-1 {
+    max-height: 32rem;
+    background-image: url('./photos/pup_run_grass.png');
+    height: auto;
+    width: 100%;
+    
 }
