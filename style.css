@@ -27,10 +27,7 @@
     padding-bottom: 50px;
 }
 
-.pet-carousel {
-    object-fit: none;
-    object-position: 50% 50%;
-}
+
 
 #slide-1 {
     max-height: 32rem;
