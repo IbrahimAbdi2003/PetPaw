@@ -1,3 +1,3 @@
 function alertMessage() {
-    alert('Thank you for your submission')
+    alert('Gift Card Verity Amount: $50')
 }
